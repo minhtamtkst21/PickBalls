@@ -115,8 +115,8 @@ namespace GamePickBallsVsComputer
                     }
                     else
                     {
-                        Console.WriteLine("Computer pick {0} balls in groups {1} ", game[b] - game[a], a);
-                        PickBalls(game, a, game[b] - game[a]);
+                        Console.WriteLine("Computer pick {0} balls in groups {1} ", game[b] - game[a], b);
+                        PickBalls(game, b, game[b] - game[a]);
                     }
                 }
                 else
