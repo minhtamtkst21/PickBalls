@@ -137,15 +137,15 @@ namespace GamePickBallsVsComputer
         }
         static bool has1Group(int[] game)
         {
-            if (game[1] > 0 && game[2] == 0 && game[3] == 0)
+            if (game[1] > 0 && game[2] <= 0 && game[3] <= 0)
             {
                 return true;
             }
-            if (game[1] == 0 && game[2] > 0 && game[3] == 0)
+            if (game[1] <= 0 && game[2] > 0 && game[3] <= 0)
             {
                 return true;
             }
-            if (game[1] == 0 && game[2] == 0 && game[3] > 0)
+            if (game[1] <= 0 && game[2] <= 0 && game[3] > 0)
             {
                 return true;
             }
@@ -153,15 +153,15 @@ namespace GamePickBallsVsComputer
         }
         static bool has2Group(int[] game)
         {
-            if (game[1] > 0 && game[2] > 0 && game[3] == 0)
+            if (game[1] > 0 && game[2] > 0 && game[3] <= 0)
             {
                 return true;
             }
-            if (game[1] == 0 && game[2] > 0 && game[3] > 0)
+            if (game[1] <= 0 && game[2] > 0 && game[3] > 0)
             {
                 return true;
             }
-            if (game[1] > 0 && game[2] == 0 && game[3] > 0)
+            if (game[1] > 0 && game[2] <= 0 && game[3] > 0)
             {
                 return true;
             }
@@ -170,15 +170,15 @@ namespace GamePickBallsVsComputer
         static void get1Group(int[] game,out int g)
         {
             g = 0;
-            if (game[1] > 0 && game[2] == 0 && game[3] == 0)
+            if (game[1] > 0 && game[2] <= 0 && game[3] <= 0)
             {
                 g = 1;
             }
-            if (game[1] == 0 && game[2] > 0 && game[3] == 0)
+            if (game[1] <= 0 && game[2] > 0 && game[3] <= 0)
             {
                 g = 2;
             }
-            if (game[1] == 0 && game[2] == 0 && game[3] > 0)
+            if (game[1] <= 0 && game[2] <= 0 && game[3] > 0)
             {
                 g = 3;
             }
@@ -187,17 +187,17 @@ namespace GamePickBallsVsComputer
         {
             a = 0;
             b = 0;
-            if (game[1] > 0 && game[2] > 0 && game[3] == 0)
+            if (game[1] > 0 && game[2] > 0 && game[3] <= 0)
             {
                 a = 1;
                 b = 2;
             }
-            if (game[1] == 0 && game[2] > 0 && game[3] > 0)
+            if (game[1] <= 0 && game[2] > 0 && game[3] > 0)
             {
                 a = 2;
                 b = 3;
             }
-            if (game[1] > 0 && game[2] == 0 && game[3] > 0)
+            if (game[1] > 0 && game[2] <= 0 && game[3] > 0)
             {
                 a = 1;
                 b = 3;
