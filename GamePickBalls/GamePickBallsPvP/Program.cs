@@ -55,19 +55,19 @@ namespace GamePickBallsPvP
             {
                 Console.Write("o");
             }
-            Console.WriteLine("         "+game[1]);
+            Console.WriteLine();
             Console.Write("Group 2:");
             for (int i = 0; i < game[2]; i++)
             {
                 Console.Write("o");
             }
-            Console.WriteLine("         " + game[2]);
+            Console.WriteLine();
             Console.Write("Group 3:");
             for (int i = 0; i < game[3]; i++)
             {
                 Console.Write("o");
             }
-            Console.WriteLine("         " + game[3]);
+            Console.WriteLine();
         }
         static bool has0Group(int[] game)
         {
