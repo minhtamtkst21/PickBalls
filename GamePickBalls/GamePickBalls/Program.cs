@@ -98,17 +98,17 @@ namespace GamePickBallsVsComputer
                 
                 if (a != b)
                 {
-                    if (a == 1)
+                    if (game[a] == 1)
                     {
                         Console.WriteLine("Computer pick {0} balls in groups {1} ", game[b], b);
                         PickBalls(game, b, game[b]);
                     }
-                    else if(b == 1)
+                    else if(game[a] == 1)
                     {
                         Console.WriteLine("Computer pick {0} balls in groups {1} ", game[a], a);
                         PickBalls(game, a, game[a]);
                     }
-                    else if (a > b)
+                    else if (game[a] > game[b])
                     {
                         Console.WriteLine("Computer pick {0} balls in groups {1} ", game[a] - game[b], a);
                         PickBalls(game, a, game[a] - game[b]);
